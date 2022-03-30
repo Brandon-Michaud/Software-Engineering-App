@@ -1,0 +1,38 @@
+
+/*
+Note : .App is use in the return of App.js 
+this create different block that can be modify on webpage
+*/
+
+.App {
+  background-color: #25b33d;
+  min-height: 1vh;
+  display: flex;
+  justify-content: Right;
+}
+
+.App-header {
+  background-color: #f39a14ef;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(30px + 5vmin);
+  color: rgb(255, 255, 255);
+}
+
+.App-Search {
+  background-color: #f39a14ef;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(30px + 5vmin);
+  color: rgb(255, 255, 255);
+  
+}
+
+
+
