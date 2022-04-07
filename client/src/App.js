@@ -5,6 +5,7 @@ import LoginButton from './components/loginButton';
  // this is where everthing is render
 
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = { serverResponse: "" };
@@ -19,6 +20,7 @@ class App extends Component {
   componentWillMount() {
     this.callAPI();
   }
+
   render() {
     return (
       <div>
@@ -31,7 +33,6 @@ class App extends Component {
         <body className="App-Search">
           <Searchbar /> 
         </body>
-        <p className="App-intro">;{this.state.serverResponse}</p>
       </div>
     )
   }
