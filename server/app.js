@@ -2,7 +2,6 @@ var express = require('express');
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
-var testServerRouter = require('./routes/testServer');
 var apiRouter = require('./routes/api');
 var mongoose = require('mongoose');
 var app = express();
@@ -10,7 +9,6 @@ var app = express();
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/signup', signupRouter);
-app.use('/testServer', testServerRouter);
 app.use('/api', apiRouter);
 
 // Set the listening port
