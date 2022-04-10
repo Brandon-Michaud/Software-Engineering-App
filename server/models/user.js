@@ -9,6 +9,31 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+    sex: {
+        type: String,
+        required: false
+    },
+    age: {
+        type: Number,
+        required: false
+    },
+    height: {
+        type: Number,
+        required: false
+    },
+    weight: {
+        type: Number,
+        required: false
+    },
+    activity: {
+        type: Number,
+        required: false
+    },
+    foods: {
+        type: Array,
+        required: false,
+        "default": []
     }
 });
 
