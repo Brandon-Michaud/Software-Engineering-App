@@ -1,53 +1,57 @@
-import React, {useState} from 'react';
-// Search bar for homepage
+import React, {useEffect, useState} from 'react';
+import './Searchbar.css'
 
- function Searchbar(props){
+ function Searchbar(){
 
-    const{searchData} = props;
-    
+    const [searchResults, setSearchResults] = useState(null)
 
-    /*
-    SearchText is the information that the user enter
-    setSearch is the function and we will pass it SearchData
-    */
-    const[SearchText,setSearch] = React.useState("");
-
-    /*
-    this handles the input of the user and pass it into searchInput
-    */
-    const inputHandeler = (e) => {
-        const searchInput = e.target.value;
-        setSearch(searchInput);
-
+    //${encodeURIComponent(searchInput)}
+    const searchHandler = (event) => {
+        fetch(`http://localhost:9000/api/${encodeURIComponent(event.target.value)}`)
+        .then(response => response.json())
+        .then(data => {
+            setSearchResults(data)
+        })
     }
 
-    // this handle the action hen user press enter for search bar
-    const searchButtonHandeler = (e) => {
+    useEffect(() => {
+        console.log(searchResults)
+    }, [searchResults])
 
-        if(e.key == "Enter"){
-
-            searchData(SearchText);
-
-        }
-    }
-/*
-
-Below we return the the button press funtion and on type 
-*/
-    return (
-       <React.Fragment>
-            <div >
-                <input className='input' 
-                type ='text' 
-                placeholder='Enter Food Here'
-                ontype = {inputHandeler}
-                onButtonPress={searchButtonHandeler}
-                dataValue = {SearchText}
-                />
-                <button>Search</button>
+    if (searchResults == null) {
+        return (
+            <div className="searchBar">
+                <form className="searchInput">
+                    <input type="text" placeholder='Enter a food' onChange={searchHandler} className="search"/>
+                    <button className='searchButton'>Search</button>
+                </form>
+                <div className="data">
+                    
+                </div>
             </div>
-         </React.Fragment>
-    )
+        )
+    }
+    else {
+        return (
+            <>
+                <div className="searchBar">
+                    <form className="searchInput">
+                        <input type="text" placeholder='Enter a food' onChange={searchHandler} className="search"/>
+                        <button className='searchButton'>Search</button>
+                    </form>
+                    <div className="data">
+                        {searchResults.foods.map((value, key) => {
+                            return (
+                                <div className='dataItem'>
+                                    <p>{value.description}</p>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </>
+        )
+    }
 }
 
 export default Searchbar;

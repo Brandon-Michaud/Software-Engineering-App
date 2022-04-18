@@ -4,8 +4,10 @@ var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
 var apiRouter = require('./routes/api');
 var mongoose = require('mongoose');
+var cors = require('cors')
 var app = express();
 
+app.use(cors())
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/signup', signupRouter);
