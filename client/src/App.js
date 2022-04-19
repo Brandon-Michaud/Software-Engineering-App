@@ -10,9 +10,7 @@ function App() {
       <header className="App"> 
         <LoginButton />
       </header>
-      <body className="App-Search">
-        <Searchbar /> 
-      </body>
+      <Searchbar /> 
     </div>
   )
 }
