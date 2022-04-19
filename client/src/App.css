@@ -5,22 +5,12 @@ this create different block that can be modify on webpage
 */
 
 .App {
-  background-color: #25b33d;
+  background-color: #9acd32;
   min-height: 40px;
   display: flex;
   justify-content: Right;
 }
 
-.App-header {
-  background-color: #f39a14ef;
-  min-height: calc(30px + 10vmin);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: top;
-  font-size: calc(30px + 5vmin);
-  color: rgb(255, 255, 255);
+html, body, #root {
+  height: 100%;
 }
-
-
-

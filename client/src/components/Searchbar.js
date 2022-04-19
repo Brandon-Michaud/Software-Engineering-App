@@ -13,6 +13,10 @@ import './Searchbar.css'
         })
     }
 
+    const buttonHandler = (index) => {
+        
+    }
+
     useEffect(() => {
         console.log(searchResults)
     }, [searchResults])
@@ -22,12 +26,15 @@ import './Searchbar.css'
             <>
                 <div className="searchBar">
                     <form className="searchInput">
-                        <input type="text" placeholder='Enter a food' onChange={searchHandler} className="search"/>
+                        <input type="text" placeholder='Enter a food' onChange={searchHandler} className="search" id="textInput"/>
                         <button className='searchButton'>Search</button>
                     </form>
                 </div>
                 <div className="data">
                         
+                </div>
+                <div className="results">
+
                 </div>
             </>
         )
@@ -44,11 +51,14 @@ import './Searchbar.css'
                 <div className="data">
                     {searchResults.foods.map((value, key) => {
                         return (
-                            <button className='dataItem'>
+                            <button className='dataItem' onClick={() => {buttonHandler(key)}}>
                                 <p>{value.description}</p>
                             </button>
                         );
                     })}
+                </div>
+                <div className="results">
+
                 </div>
             </>
         )

@@ -6,12 +6,12 @@ import LoginButton from './components/loginButton';
 
 function App() {
   return (
-    <div>
+    <>
       <header className="App"> 
         <LoginButton />
       </header>
       <Searchbar /> 
-    </div>
+    </>
   )
 }
 

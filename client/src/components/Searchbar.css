@@ -3,7 +3,7 @@
 }
 
 .searchBar {
-  background-color: #f39a14ef;
+  background-color: 	#FFC422;
   min-height: 40px;
   display: flex;
   flex-direction: column;
@@ -32,10 +32,15 @@ width: 300px;
     border-width: 1px;
 }
 
+.searchButton:hover {
+    background-color: #d303fc;
+    color: white;
+}
+
 .data {
+    left: calc(100% / 2 - 150px);
+    position: absolute;
 margin-top: -10px;
-margin-left: auto;
-margin-right: auto;
 width: 300px;
 min-height: 0;
 max-height: 200px;
@@ -70,5 +75,11 @@ text-align: left;
 }
 
 .dataItem:hover {
-    background-color: lightgray;
+    background-color: #027B7B;
+    color: white;
+}
+
+.results {
+    height: calc(100% - 120px);
+    background-color: #D2461D;
 }
