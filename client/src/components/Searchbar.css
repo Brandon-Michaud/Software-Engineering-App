@@ -3,7 +3,7 @@
 }
 
 .searchBar {
-  background-color: 	#FFC422;
+  background-color: #FFC422;
   min-height: 40px;
   display: flex;
   flex-direction: column;
@@ -81,5 +81,5 @@ text-align: left;
 
 .results {
     height: calc(100% - 120px);
-    background-color: #D2461D;
+    background-color: #9acd32;
 }

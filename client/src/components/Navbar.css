@@ -1,0 +1,6 @@
+.navbar {
+    background-color: #D2461D;
+    min-height: 40px;
+    display: flex;
+    justify-content: Right;
+}

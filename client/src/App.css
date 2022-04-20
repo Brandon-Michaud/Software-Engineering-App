@@ -1,15 +1,9 @@
 
 /*
+#9acd32
 Note : .App is use in the return of App.js 
 this create different block that can be modify on webpage
 */
-
-.App {
-  background-color: #9acd32;
-  min-height: 40px;
-  display: flex;
-  justify-content: Right;
-}
 
 html, body, #root {
   height: 100%;
