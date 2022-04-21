@@ -1,7 +1,6 @@
 import React from "react";
 import './App.css';
-import Searchbar from './components/Searchbar';
-import Navbar from './components/Navbar';
+import Home from './components/Home';
 import Login from './components/Login'
 import Signup from './components/Signup'
  // this is where everthing is render
@@ -9,7 +8,7 @@ import Signup from './components/Signup'
 function App() {
   return (
     <>
-      <Signup />
+      <Home />
     </>
   )
 }
