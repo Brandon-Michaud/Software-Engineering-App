@@ -4,17 +4,17 @@ import './Login.css'
 
  function Login(){
     return (
-        <>
+        <div className='login'>
             <Navbar />
             <div className='background'>
                 <form className='loginForm'>
                     <p className='title'>Log In</p>
-                    <input type='text' placeholder='Email Address' className='email'></input>
-                    <input type='text' placeholder='Password' className='pass'></input>
-                    <button className='submit'>Login</button>
+                    <input type='email' placeholder='Email Address' className='email' required></input>
+                    <input type='password' placeholder='Password' className='pass' required></input>
+                    <button className='submit'>Log In</button>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 

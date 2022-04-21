@@ -4,9 +4,9 @@ import './Navbar.css'
  function Navbar(){
     return (
         <div className='navbar'>
-            <button className="login"> Log In </button>
+            <button className="loginBtn"> Log In </button>
 
-            <button className="register"> Sign Up </button>
+            <button className="signupBtn"> Sign Up </button>
 
         </div>
     )

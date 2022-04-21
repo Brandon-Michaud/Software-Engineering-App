@@ -1,9 +1,13 @@
-.background {
+.login {
+    height: 100%
+}
+
+.login .background {
     height: calc(100% - 40px);
     background-color: #9acd32;
 }
 
-.loginForm {
+.login .loginForm {
     background-color: #FFC422;
     border-radius: 10px;
     position: absolute;
@@ -14,7 +18,7 @@
     top: 100px
 }
 
-.email, .pass {
+.login .email, .pass {
     padding: 0;
     border-width: 1;
     width: 350px;
@@ -25,19 +29,19 @@
     padding-left: 5px;
 }
 
-.email {
+.login .email {
     position: absolute;
     left: calc(100% / 2 - 177px);
     top: 150px;
 }
 
-.pass {
+.login .pass {
     position: absolute;
     left: calc(100% / 2 - 177px);
     top: 210px;
 }
 
-.submit {
+.login .submit {
     background-color: #d303fc;
     color: white;
     width: 354px;
@@ -51,12 +55,12 @@
     font-size: 18px;
 }
 
-.submit:hover {
+.login .submit:hover {
     background-color: #9603b4;
     color: white;
 }
 
-.title {
+.login .title {
     color: white;
     font-size: 50px;
     font-weight: 700;

@@ -1,0 +1,130 @@
+.signup {
+    height: 100%;
+}
+
+.signup .background {
+    height: calc(100% - 40px);
+    background-color: #9acd32;
+}
+
+.signup .signupForm {
+    background-color: #FFC422;
+    border-radius: 10px;
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    left: calc(100% / 2 - 250px);
+    top: 100px
+}
+
+.signup .email, .pass {
+    padding: 0;
+    border-width: 1;
+    width: 345px;
+    height: 50px;
+    margin: auto;
+    border-radius: 7.5px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.signup .email {
+    position: absolute;
+    left: calc(100% / 2 - 177px);
+    top: 100px;
+}
+
+.signup .pass {
+    position: absolute;
+    left: calc(100% / 2 - 177px);
+    top: 160px;
+}
+
+.signup .gender {
+    position: absolute;
+    padding: 0;
+    border-width: 2px;
+    border-color: black;
+    width: 354px;
+    height: 54px;
+    margin: auto;
+    border-radius: 7.5px;
+    font-size: 18px;
+    padding-left: 5px;
+    left: calc(100% / 2 - 177px);
+    top: 220px;
+}
+
+.signup .age, .height, .weight {
+    padding: 0;
+    border-width: 1;
+    border-color: black;
+    width: 345px;
+    height: 50px;
+    margin: auto;
+    border-radius: 7.5px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.signup .age {
+    position: absolute;
+    left: calc(100% / 2 - 177px);
+    top: 280px;
+}
+
+.signup .weight {
+    position: absolute;
+    left: calc(100% / 2 - 177px);
+    top: 340px;
+}
+
+.signup .height {
+    position: absolute;
+    left: calc(100% / 2 - 177px);
+    top: 400px;
+}
+
+.signup .activity {
+    position: absolute;
+    padding: 0;
+    border-width: 2px;
+    border-color: black;
+    width: 354px;
+    height: 54px;
+    margin: auto;
+    border-radius: 7.5px;
+    font-size: 18px;
+    padding-left: 5px;
+    left: calc(100% / 2 - 177px);
+    top: 460px;
+}
+
+.signup .submit {
+    background-color: #d303fc;
+    color: white;
+    width: 354px;
+    height: 50px;
+    margin: auto;
+    border-radius: 10px;
+    border-width: 1px;
+    position: absolute;
+    left: calc(100% / 2 - 177px);
+    top: 600px;
+    font-size: 18px;
+}
+
+.signup .submit:hover {
+    background-color: #9603b4;
+    color: white;
+}
+
+.signup .title {
+    position: relative;
+    top: -30px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
