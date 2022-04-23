@@ -1,13 +1,25 @@
 import React from 'react';
-import './Navbar.css'
+import './Navbar.css';
+import {Link} from 'react-router-dom';
 
- function Navbar(){
+function Navbar(){
     return (
         <div className='navbar'>
-            <button className="loginBtn"> Log In </button>
-
-            <button className="signupBtn"> Sign Up </button>
-
+            <img href='../../public/logo.png' alt='logo' className='logo'></img>
+            <ul className='pages'>
+                <Link to='/'>
+                    <li>Home</li>
+                </Link>
+                <li>Profile</li>
+            </ul>
+            <ul className='personal'>
+                <Link to='/login'>
+                    <li>Log In</li>
+                </Link>
+                <Link to='/signup'>
+                    <li>Sign Up</li>
+                </Link>
+            </ul>
         </div>
     )
 }

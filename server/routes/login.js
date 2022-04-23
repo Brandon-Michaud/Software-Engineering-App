@@ -6,7 +6,12 @@ router.get('/:email/:password', (req, res) => {
   User.find({
     email: req.params.email
   }).then((result) => {
-    res.send(result);
+    if (result[0].password === req.params.password) {
+      res.send(result[0]);
+    }
+    else {
+      res.send("Incorrect Password")
+    }
   }).catch((err) => {
     console.log(err);
   });

@@ -80,6 +80,6 @@ text-align: left;
 }
 
 .results {
-    height: calc(100% - 120px);
+    height: calc(100% - 80px);
     background-color: #9acd32;
 }

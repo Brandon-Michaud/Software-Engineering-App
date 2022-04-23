@@ -1,9 +1,9 @@
 .signup {
-    height: 100%;
+    height: calc(100% - 50px);
 }
 
 .signup .background {
-    height: calc(100% - 40px);
+    height: 100%;
     background-color: #9acd32;
 }
 
@@ -12,10 +12,10 @@
     border-radius: 10px;
     position: absolute;
     width: 500px;
-    height: 700px;
+    height: 600px;
     margin: auto;
     left: calc(100% / 2 - 250px);
-    top: 100px
+    top: 80px
 }
 
 .signup .email, .pass {
@@ -111,7 +111,7 @@
     border-width: 1px;
     position: absolute;
     left: calc(100% / 2 - 177px);
-    top: 600px;
+    top: 520px;
     font-size: 18px;
 }
 
