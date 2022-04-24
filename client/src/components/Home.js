@@ -2,10 +2,10 @@ import React from 'react';
 import Searchbar from './Searchbar';
 import './Home.css'
 
- function Home(){
+ function Home({user}){
     return (
         <div className='home'>
-            <Searchbar />
+            <Searchbar user={user}/>
         </div>
     )
 }
