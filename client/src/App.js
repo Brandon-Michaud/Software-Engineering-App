@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import {Routes} from 'react-router-dom'
 import Home from './components/Home';
+import Profile from './components/Profile';
 import Login from './components/Login'
 import Signup from './components/Signup'
 import Navbar from './components/Navbar'
@@ -24,7 +25,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-                <Route path="/" exact element = {<Home user={user}/>} />
+                <Route path="/" exact element = {<Home user={user} login={login}/>} />
+                <Route path="/profile" element = {<Profile user={user}/>} />
                 <Route path="/login" element = {<Login login={login}/>} />
                 <Route path= "/signup" element = {<Signup/>} />
         </Routes>

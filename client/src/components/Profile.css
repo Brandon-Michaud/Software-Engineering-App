@@ -1,0 +1,67 @@
+.profile {
+    min-height: 100%;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    background-color: #9acd32;
+    display: flex;
+}
+
+.error {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.calories {
+    margin: 0;
+    color: white;
+    padding-left: 10px;
+}
+
+.current {
+    width: calc(50% - 130px);
+    text-align: right;
+}
+
+.current * {
+    padding-right: 20px;
+}
+
+.labels {
+    width: 260px;
+    background-color: #d303fc;
+    text-align: center;
+}
+
+.labels p {
+    padding: 0;
+}
+
+.labels ul, .current ul, .recommended ul {
+    list-style: none;
+    padding: 0;
+}
+
+.labels h1, .current h1, .recommended h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 0;
+}
+
+.recommended {
+    width: calc(50% - 130px);
+    background-color: #FFC422;
+}
+
+.recommended * {
+    padding-left: 20px;
+}
+
+.subLabel, .calories {
+    font-size: 30px;
+    font-weight: 500;
+}

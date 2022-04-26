@@ -14,7 +14,9 @@ function Navbar(){
                 <Link to='/'>
                     <li>Home</li>
                 </Link>
-                <li>Profile</li>
+                <Link to="/profile">
+                    <li>Profile</li>
+                </Link>
             </ul>
             <ul className='personal'>
                 <Link to='/login'>

@@ -107,8 +107,13 @@
 }
 
 .resultItem ul {
-    width: calc(100% - 300px);
+    width: 200px;
     padding-left: 40px;
+    margin: 0;
+    border-width: 0px;
+    border-right: 1px;
+    border-color: white;
+    border-style: solid;
 }
 
 button.addFood {
@@ -123,4 +128,19 @@ button.addFood {
 button.addFood:hover {
     color: #d303fc;
     background-color: white;
+}
+
+.resultItem .subLabel {
+    list-style: none;
+    font-size: 24px;
+}
+
+p.numAdded {
+    width: calc(100% - 900px);
+    text-align: center;
+    font-size: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 0;
+    font-weight: 600;
 }
