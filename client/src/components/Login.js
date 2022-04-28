@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import './Login.css'
 
- function Login({login}){
+// Define a functional component for the login page. It takes a login function as a parameter that sets the state of the app
+function Login({login}){
 
+    // Define a state that holds the values of the input fields
     const [input, setInput] = useState({email: '', password: ''})
 
+    // When the log in form is submitted, call the log in route on the backend and retrieve the user object
     const submitHandler = (event) => {
         event.preventDefault()
         fetch(`http://localhost:9000/login/${encodeURIComponent(event.currentTarget.elements.email.value)}/${encodeURIComponent(event.currentTarget.elements.password.value)}`)

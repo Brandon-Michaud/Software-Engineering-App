@@ -1,7 +1,10 @@
 import React from "react";
 import './Profile.css'
 
+// Define a functional component for the profile page. It takes the user state of the app as a parameter
 function Profile({user}) {
+
+    // Define a function that calculates the sum of a specified nutrient in user's food list
     const calcNutrient = (user, index) => {
         let total = 0;
         user.foods.map((value, key) => {
@@ -11,6 +14,7 @@ function Profile({user}) {
         return total
     }
 
+    // Define a function that calculates the total calories in user's food list
     const calcTotalCalories = (user) => {
         let totalP = 0;
         let totalC = 0;
@@ -24,6 +28,7 @@ function Profile({user}) {
         return (4*totalP + 9*totalF + 4*totalC)
     }
 
+    // Define a function that calculates the recommend calories for user
     const calcRecommendedCalories = (user) => {
         let totalCalories = (10 * (user.weight * 0.453592)) + (6.25 * (user.height * 2.54)) - (5 * (user.age / 12));
         if (user.gender === "Male") {

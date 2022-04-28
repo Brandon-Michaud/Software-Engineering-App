@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import './Signup.css'
 
- function Signup(){
+// Define a functional component for the sign up page
+function Signup(){
 
+    // Define a state for the inputs
     const [input, setInput] = useState({email: '', password: '', gender: 'null', age: '', height: '', weight: '', activity: 'null'})
 
+    // When the form is submitted, convert the activity level to a number and call the sign up route with the input data
     const submitHandler = (event) => {
         event.preventDefault();
         let activityLevel;

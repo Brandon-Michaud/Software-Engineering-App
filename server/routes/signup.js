@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const User = require('../models/user');
 
+// This route creates a user document in the database with the given parameters
 router.get('/:email/:password/:gender/:age/:height/:weight/:activity', (req, res) => {
   
   const user = new User({

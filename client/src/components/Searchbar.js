@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import './Searchbar.css'
 
- function Searchbar({user, login}){
+// Define a functional component for the searchbar. It takes the user state of the app and the login function as parameters
+function Searchbar({user, login}){
 
+    // Define states for the search input, suggestions, and results
     const [searchResults, setSearchResults] = useState([])
     const [suggestions, setSuggestions] = useState([])
     const [searchInput, setSearchInput] = useState('');
 
+    // When the input is changed, update the suggestions by calling the route to the food database
     const searchHandler = (event) => {
         setSearchInput(event.target.value)
         if (event.target.value.length === 0) {
@@ -21,11 +24,13 @@ import './Searchbar.css'
         }
     }
 
+    // When a suggestion is clicked, update the input to the value of the suggestion
     const buttonHandler = (index) => {
         setSearchInput(suggestions[index].description)
         setSuggestions([])
     }
 
+    // When the search button is pressed, update the search results by calling the route to the food database
     const formHandler = (event) => {
         event.preventDefault()
         fetch(`http://localhost:9000/api/${encodeURIComponent(event.currentTarget.elements.textInput.value)}`)
@@ -36,6 +41,7 @@ import './Searchbar.css'
         setSuggestions([])
     }
 
+    // When the add food button is pressed, call the route to add the food to the user's list of foods in the database
     const addFoodHandler = (food) => {
         if (user === null) {
             alert('Log in or sign up to access this function')
@@ -58,6 +64,7 @@ import './Searchbar.css'
         }
     }
 
+    // Count the number of times the given food is in the user's list of foods
     const countNumberAdded = (food) => {
         let num = 0;
         user.foods.forEach(element => {

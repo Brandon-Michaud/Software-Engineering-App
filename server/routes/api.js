@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 
+// This route takes a search parameter and queries the food database and then responds with the JSON object of results
 router.get('/:searchInput', (req, res) => {
     const params = {
         api_key: 'QRfBMF4C6vGHhpSERkdxZWSqgQXlpkG1SeM86v48',

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// This is represents all of the data we wish to collect about users
 const userSchema = new Schema({
     email: {
         type: String,

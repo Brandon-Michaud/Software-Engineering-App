@@ -3,6 +3,7 @@ import './Navbar.css';
 import {Link} from 'react-router-dom';
 import logo from '../images/logo.png'
 
+// Define a functional component for the navigation bar that includes links pages
 function Navbar(){
 
     return (
