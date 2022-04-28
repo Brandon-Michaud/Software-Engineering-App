@@ -4,7 +4,7 @@ This project was developed by Brandon Michaud, Phong Nguyen, and Anthony Balch w
 
 # How to Install
 
-Clone the repository to your local machine using get. Once this is done, navigate to the client folder and run `npm install` to install dependencies on the client side. Then navigate to the server folder and run `npm install` once again to install dependencies on the server side.
+Clone the repository to your local machine using git. Once this is done, navigate to the client folder and run `npm install` to install dependencies on the client side. Then navigate to the server folder and run `npm install` once again to install dependencies on the server side.
 
 # How to Run
 
