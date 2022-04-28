@@ -114,12 +114,12 @@ import './Searchbar.css'
                                 <li className="subLabel">Minerals</li>
                                 <li>Calcium: {value.foodNutrients[10].value}mg</li>
                                 <li>SodiumL {value.foodNutrients[15].value}mg</li>
-                                <li>Potassium: {value.foodNutrients[14].value}g</li>
+                                <li>Potassium: {value.foodNutrients[14].value / 1000}g</li>
                                 <li>Magnesium: {value.foodNutrients[12].value}mg</li>
                                 <li>Phosphorous: {value.foodNutrients[13].value}mg</li>
                                 <li>Iron: {value.foodNutrients[11].value}mg</li>
                                 <li>Zinc: {value.foodNutrients[16].value}mg</li>
-                                <li>Copper: {value.foodNutrients[17].value}mg</li>
+                                <li>Copper: {value.foodNutrients[17].value * 1000}mg</li>
                                 <li>Selenium: {value.foodNutrients[18].value}mcg</li>
                             </ul>
                             <p className='numAdded'>Number Eaten Today: {countNumberAdded(value)}</p>
