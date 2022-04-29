@@ -5,6 +5,9 @@
     color: white;
     font-size: 24px;
     background-color: #9acd32;
+}
+
+.nutrients {
     display: flex;
 }
 
@@ -66,3 +69,55 @@
     font-size: 30px;
     font-weight: 500;
 }
+
+.macroSliders {
+    width: 100%;
+    background-color: #027B7B;
+    height: 110px;
+}
+
+.protein, .fat, .carbohydrates {
+    -webkit-appearance: none;
+    width: 70%;
+    margin-top: 5px;
+    height: 15px;
+    border-radius: 5px;  
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .protein::-webkit-slider-thumb, .fat::-webkit-slider-thumb, .carbohydrates::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #8B4B53;
+    cursor: pointer;
+  }
+  
+  .protein::-moz-range-thumb, .fat::-moz-range-thumb, .carbohydrates::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #8B4B53;
+    cursor: pointer;
+  }
+
+  .proteinStuff p, .fatStuff p, .carbohydrateStuff p {
+      width: 25%;
+      margin: 0;
+      padding: 0;
+      padding-left: 10px;
+      height: 25px;
+      font-size: 18px;
+      font-weight: 500;
+  }
+
+  .proteinStuff, .fatStuff, .carbohydrateStuff {
+      display: flex;
+      height: 25px;
+      padding: 5px;
+  }

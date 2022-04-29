@@ -67,6 +67,9 @@ function Searchbar({user, login}){
     // Count the number of times the given food is in the user's list of foods
     const countNumberAdded = (food) => {
         let num = 0;
+        if (user === null) {
+            return "Log in to access this functionality"
+        }
         user.foods.forEach(element => {
             if (element.fdcId === food.fdcId) {
                 ++num;
