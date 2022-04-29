@@ -29,3 +29,9 @@ On the home page, you will be presented with a search bar. This search bar takes
 ## Profile
 
 On the profile page, if you are not logged in, it will display a message saying you need to do so to access the feature. If you are logged in, you will see sliders and three columns: The left column is your current nutritional intake for the day, the middle column has all of the labels, and the right column is the recommended nutrional intake that custom tailored to your biometrics. The sliders control the breakdown of calories from macronutrients. It is up to the user to ensure the values add up to 100. From here you can view where you still need to improve on for the day to help inform nutrition decisions.
+
+# References
+
+- https://www.healthline.com/nutrition/how-to-count-macros#benefits
+- https://www.health.harvard.edu/staying-healthy/listing_of_vitamins
+- https://fdc.nal.usda.gov/
