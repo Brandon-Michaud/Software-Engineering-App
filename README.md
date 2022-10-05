@@ -2,6 +2,9 @@
 
 This project was developed by Brandon Michaud, Phong Nguyen, and Anthony Balch with the purpose of being submitted as a final project for our software engineering class.
 
+# Notice
+This project uses a Mongo Atlas database that is free but pauses after periods of inactivity, so if you downlad the code and get an error on the server terminal that says something to the tune of `Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.t1uwn.mongodb.net`, please let me know at michaudbrandond@gmail.com and I will reboot it. 
+
 # How to Install
 
 Clone the repository to your local machine using git. Once this is done, navigate to the client folder and run `npm install` to install dependencies on the client side. Then navigate to the server folder and run `npm install` once again to install dependencies on the server side.
