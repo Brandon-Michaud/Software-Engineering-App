@@ -2,8 +2,11 @@
 
 This project was developed by Brandon Michaud, Phong Nguyen, and Anthony Balch with the purpose of being submitted as a final project for our software engineering class.
 
+# Style
+Our project's name was Three A-Mangos, a play on the term three amigos, so we decided to theme the website around mangos. This means some of the colors are unusual to see on a website, but we decided to keep them that way in the spirit of originality and fun.
+
 # Notice
-This project uses a Mongo Atlas database that is free but pauses after periods of inactivity, so if you downlad the code and get an error on the server terminal that says something to the tune of `Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.t1uwn.mongodb.net`, please let me know at michaudbrandond@gmail.com and I will reboot it. 
+This project uses a Mongo Atlas database that is free but pauses after periods of inactivity, so if you download the code and get an error on the server terminal that says something to the tune of `Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.t1uwn.mongodb.net`, please let me know at michaudbrandond@gmail.com and I will reboot it. 
 
 # How to Install
 
